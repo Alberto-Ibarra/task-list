@@ -1,0 +1,10 @@
+<form>
+    <input type="text" placeholder="enter task... " [(ngModel)]="taskInput" name="input"/> <br/>
+    <button (click)="newTask()">Enter</button>
+</form>
+
+<ul>
+    <li *ngFor="let task of taskList">
+        {{task}}
+    </li>
+</ul>
